@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget{
   @override
   var isDark;
   MyApp(this.isDark);
+  //nn
   Widget build(BuildContext context) {
    return BlocProvider(
      create: (BuildContext context) =>NewsCubit()..GetBusinessData()..GetScienceData()..GetSportsData()..ChangeThemeMode(fromShared: isDark),
